@@ -29,5 +29,11 @@ jobs:
       - name: Tests unitaires
         run: npm test
 
+      - name: Installation de Playwright
+        run: npx playwright install --with-deps
+
+      - name: Tests end-to-end
+        run: npx playwright test
+
       - name: Build de l'application
         run: npm run build
