@@ -6,6 +6,9 @@ export default defineConfig({
   plugins: [react()],
   test: {
     // On dit à Vitest d'ignorer le dossier e2e et les node_modules
+    globals: false,
+    environment: 'jsdom',
     exclude: ['e2e/**', 'node_modules/**'],
   },
 });
+

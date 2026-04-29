@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint src --ext .js,.jsx",
-    "preview": "vite preview",
-    "test": "vitest"
+    "lint": "eslint src",
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "react": "^19.2.5",

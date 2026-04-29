@@ -27,13 +27,13 @@ jobs:
         run: npm run lint
 
       - name: Tests unitaires
-        run: npm test
+        run: npm run test:unit
 
       - name: Installation de Playwright
         run: npx playwright install --with-deps
 
       - name: Tests end-to-end
-        run: npx playwright test
+        run: npm run test:e2e
 
       - name: Build de l'application
         run: npm run build
