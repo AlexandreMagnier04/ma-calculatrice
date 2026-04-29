@@ -239,8 +239,9 @@ const styles = {
   },
   historyPanel: {
     width: "250px",
-    background: "#f9f9f9",
+    background: "#747474",
     padding: "1rem",
+    color: "white",
     borderRadius: "10px",
     border: "1px solid #ddd",
   },
